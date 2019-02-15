@@ -31,6 +31,9 @@ namespace MegaFpCSharpTodoBackEndTotallyNotButtCheeks
                 .AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services
+                .AddCors();
+
             services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.SuppressModelStateInvalidFilter = true;
@@ -60,6 +63,12 @@ namespace MegaFpCSharpTodoBackEndTotallyNotButtCheeks
                 app
                     .UseHsts();
             }
+
+            app
+                .UseCors(
+                    builder => builder
+                        .WithOrigins("http://localhost:8000")
+                );
 
             app
                 .UseHttpsRedirection();
