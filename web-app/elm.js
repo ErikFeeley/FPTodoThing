@@ -6905,26 +6905,6 @@ var author$project$Page$Todo$update = F2(
 				elm$core$Platform$Cmd$none);
 		}
 	});
-var author$project$Page$Todos$Failure = function (a) {
-	return {$: 'Failure', a: a};
-};
-var author$project$Page$Todos$Success = function (a) {
-	return {$: 'Success', a: a};
-};
-var author$project$Page$Todos$update = F2(
-	function (msg, model) {
-		if (msg.a.$ === 'Ok') {
-			var value = msg.a.a;
-			return _Utils_Tuple2(
-				author$project$Page$Todos$Success(value),
-				elm$core$Platform$Cmd$none);
-		} else {
-			var httpError = msg.a.a;
-			return _Utils_Tuple2(
-				author$project$Page$Todos$Failure(httpError),
-				elm$core$Platform$Cmd$none);
-		}
-	});
 var elm$browser$Browser$External = function (a) {
 	return {$: 'External', a: a};
 };
@@ -10611,19 +10591,8 @@ var author$project$Main$update = F2(
 				var url = _n0.a.a;
 				return A2(author$project$Main$toRoute, url, model);
 			case 'GotTodosMsg':
-				if (_n0.b.$ === 'Todos') {
-					var subMsg = _n0.a.a;
-					var subModel = _n0.b.a;
-					return A4(
-						author$project$Main$updateWith,
-						author$project$Main$Todos,
-						author$project$Main$GotTodosMsg,
-						model,
-						A2(author$project$Page$Todos$update, subMsg, subModel));
-				} else {
-					var subMsg = _n0.a.a;
-					return _Utils_Tuple2(model, elm$core$Platform$Cmd$none);
-				}
+				var subMsg = _n0.a.a;
+				return _Utils_Tuple2(model, elm$core$Platform$Cmd$none);
 			default:
 				if (_n0.b.$ === 'Todo') {
 					var subMsg = _n0.a.a;
@@ -10681,6 +10650,7 @@ var author$project$Page$Todos$view = function (model) {
 					]))
 			]));
 };
+var elm$core$Debug$todo = _Debug_todo;
 var author$project$Main$view = function (model) {
 	var _n0 = model.page;
 	switch (_n0.$) {
@@ -10706,12 +10676,20 @@ var author$project$Main$view = function (model) {
 				author$project$Layout$view,
 				author$project$Main$GotTodosMsg,
 				author$project$Page$Todos$view(subModel));
-		default:
+		case 'Todo':
 			var subModel = _n0.a;
 			return A2(
 				author$project$Layout$view,
 				author$project$Main$GotTodoMsg,
 				author$project$Page$Todo$view(subModel));
+		default:
+			var subModel = _n0.a;
+			return _Debug_todo(
+				'Main',
+				{
+					start: {line: 76, column: 13},
+					end: {line: 76, column: 23}
+				})('do this later');
 	}
 };
 var elm$browser$Browser$application = _Browser_application;

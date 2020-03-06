@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/fsharp-api.fsproj": {}
+  },
+  "projects": {
+    "/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/fsharp-api.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/fsharp-api.fsproj",
+        "projectName": "fsharp-api",
+        "projectPath": "/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/fsharp-api.fsproj",
+        "packagesPath": "/home/erik/.nuget/packages/",
+        "outputPath": "/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/home/erik/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/erik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "Giraffe": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/home/erik/dotnet/sdk/3.0.100-preview8-013656/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

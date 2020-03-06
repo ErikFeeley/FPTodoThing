@@ -41,6 +41,7 @@ type Page
     | Blank
     | Todos Todos.Model
     | Todo Todo.Model
+    | CreateTodo String
 
 
 init : () -> Url -> Key -> ( Model, Cmd Msg )
@@ -70,6 +71,9 @@ view model =
         Todo subModel ->
             Todo.view subModel
                 |> Layout.view GotTodoMsg
+
+        CreateTodo subModel ->
+            Debug.todo "do this later"
 
 
 

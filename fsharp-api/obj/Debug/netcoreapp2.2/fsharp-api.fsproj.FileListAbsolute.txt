@@ -1,0 +1,10 @@
+/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/bin/Debug/netcoreapp2.2/fsharp-api.deps.json
+/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/bin/Debug/netcoreapp2.2/fsharp-api.runtimeconfig.json
+/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/bin/Debug/netcoreapp2.2/fsharp-api.runtimeconfig.dev.json
+/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/bin/Debug/netcoreapp2.2/fsharp-api.dll
+/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/bin/Debug/netcoreapp2.2/fsharp-api.pdb
+/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/obj/Debug/netcoreapp2.2/fsharp-api.fsprojAssemblyReference.cache
+/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/obj/Debug/netcoreapp2.2/fsharp-api.AssemblyInfoInputs.cache
+/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/obj/Debug/netcoreapp2.2/fsharp-api.AssemblyInfo.fs
+/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/obj/Debug/netcoreapp2.2/fsharp-api.dll
+/home/erik/_dev/personal-repos/FPTodoThing/fsharp-api/obj/Debug/netcoreapp2.2/fsharp-api.pdb
